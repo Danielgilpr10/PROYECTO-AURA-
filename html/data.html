@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Caracterización Estudiantil</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/data.css">
+</head>
+
+<body>
+    <!-- Caja principal -->
+    <div class="caja-principal">
+        <!-- Parte superior con el título -->
+        <header class="parte-superior">
+            <a href="index.html" class="boton-volver">← Volver</a>
+            <!-- Logo de AURA -->
+            <img src="../img/logo.png" alt="Logo de AURA" class="logo-aura">
+            <h1>Formulario de Caracterización Estudiantil</h1>
+        </header>
+
+        <section class="menu-secciones">
+            <div class="seccion-menu seccion-activa">
+                <div class="circulo-icono">
+                    <i class="bx bx-user"></i>
+                </div>
+                <p>Datos personales</p>
+            </div>
+
+            <div class="seccion-menu">
+                <div class="circulo-icono">
+                    <i class="bx bx-book-open"></i>
+                </div>
+                <p>Información académica</p>
+            </div>
+
+            <div class="seccion-menu">
+                <div class="circulo-icono">
+                    <i class="bx bx-briefcase"></i>
+                </div>
+                <p>Situación socioeconómica</p>
+            </div>
+
+            <div class="seccion-menu">
+                <div class="circulo-icono">
+                    <i class="bx bx-brain"></i>
+                </div>
+                <p>Aspectos Psicosociales</p>
+            </div>
+
+            <div class="seccion-menu">
+                <div class="circulo-icono">
+                    <i class="bx bx-first-aid"></i>
+                </div>
+                <p>Salud y bienestar</p>
+            </div>
+
+        </section>
+
+        <!-- Formulario -->
+        <!-- PARTE DE JUAN -->
+        <form action="academy.html">
+            <section class="seccion-formulario">
+
+                <h2>Datos personales</h2>
+
+                <!-- PARTE DE JUAN -->
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre completo" required>
+
+
+                <label for="identificacion">Número de identificación *</label>
+                <input type="text" id="identificacion" placeholder="Ingrese su número de identificación" required>
+
+
+                <div class="fila-campos">
+
+                    <div class="campo-formulario">
+                        <label for="edad">Edad *</label>
+                        <input type="number" id="edad" placeholder="Edad" min="15" max="80" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="genero">Género *</label>
+                        <select id="genero" required>
+                            <option value="">Seleccione</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Botones de navegación -->
+            <section class="seccion-botones">
+                <button type="button" class="boton-anterior" onclick="location.href='login.html'">Anterior</button>
+                <button type="submit" class="boton-siguiente">Siguiente</button>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>
